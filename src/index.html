@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/vaulab-src.js"></script>
+
+</head>
+
+<body>
+  <lab-alert type="warning" header="Nodtes" message="Additional description and informations about copywriting"
+    closable></lab-alert>
+</body>
+
+<script>
+  // test event component listner
+  alertClosed = function ($event) {
+    console.log($event)
+  }
+  const todoListElement = document.querySelector('lab-alert');
+  todoListElement.addEventListener('closed', alertClosed)
+</script>
+
+
+</html>
