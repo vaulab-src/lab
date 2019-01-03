@@ -17,6 +17,7 @@ export namespace Components {
     'close': () => void;
     'header': string;
     'message': string;
+    'showicon': boolean;
     'type': string;
   }
   interface LabAlertAttributes extends StencilHTMLAttributes {
@@ -24,6 +25,7 @@ export namespace Components {
     'header'?: string;
     'message'?: string;
     'onAlertClosed'?: (event: CustomEvent) => void;
+    'showicon'?: boolean;
     'type'?: string;
   }
 }

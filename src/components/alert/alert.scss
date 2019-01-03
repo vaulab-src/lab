@@ -29,18 +29,37 @@ lab-alert {
     .alert-info {
         border: 1px solid #91d5ff;
         background-color: #e6f7ff;
+        .alert-icon {
+            color: #1890ff;
+        }
+    }
+
+
+    .alert-block-margin {
+        margin-left: 25px;
     }
     .alert-success {
         border: 1px solid #b7eb8f;
         background-color: #f6ffed;
+        .alert-icon {
+            color: #52c41a;
+        }
     }
     .alert-warning {
         border: 1px solid #ffe58f;
         background-color: #fffbe6;
     }
+    .alert-icon {
+        top: 17.5px;
+        left: 16px;
+        position: absolute;
+    }
     .alert-error {
         border: 1px solid #ffa39e;
         background-color: #fff1f0;
+        .alert-icon {
+            color: #f5222d;
+        }
     }
     .alert-description {
         font-size: 14px;
