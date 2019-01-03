@@ -19,7 +19,6 @@ export class Alert {
         this.displayed = false;
     }
     render() {
-        console.log('this.showicon', this.closable);
         if (this.displayed) {
             return (
                 <div class={"alert alert-" + this.type}>
