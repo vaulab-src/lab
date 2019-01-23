@@ -10,18 +10,29 @@
 </head>
 
 <body>
-  <lab-alert type="success" header="Notes" message="Additional description and informations about copywriting" closable
+  <!-- <lab-alert type="success" header="Notes" message="Additional description and informations about copywriting" closable
     showicon></lab-alert>
-</body>
 
-<script>
-  // test event component listner
-  alertClosed = function ($event) {
-    console.log($event)
-  }
-  const todoListElement = document.querySelector('lab-alert');
-  todoListElement.addEventListener('closed', alertClosed)
-</script>
+  <script>
+    // test event component listner
+    alertClosed = function ($event) {
+      console.log($event)
+    }
+    const todoListElement = document.querySelector('lab-alert');
+    todoListElement.addEventListener('closed', alertClosed)
+  </script>
+
+  -->
+  <!-- <lab-datepicker> </lab-datepicker> -->
+  <lab-datepicker> </lab-datepicker>
+  <script>
+    const datePicker = document.querySelector('lab-datepicker');
+    datePicker.addEventListener('onChange', function ($event) {
+      console.log($event);
+    })
+  </script>
+
+</body>
 
 
 </html>

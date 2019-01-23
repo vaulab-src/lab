@@ -28,15 +28,22 @@ export namespace Components {
     'showicon'?: boolean;
     'type'?: string;
   }
+
+  interface LabDatepicker {}
+  interface LabDatepickerAttributes extends StencilHTMLAttributes {
+    'onOnChange'?: (event: CustomEvent) => void;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'LabAlert': Components.LabAlert;
+    'LabDatepicker': Components.LabDatepicker;
   }
 
   interface StencilIntrinsicElements {
     'lab-alert': Components.LabAlertAttributes;
+    'lab-datepicker': Components.LabDatepickerAttributes;
   }
 
 
@@ -46,12 +53,20 @@ declare global {
     new (): HTMLLabAlertElement;
   };
 
+  interface HTMLLabDatepickerElement extends Components.LabDatepicker, HTMLStencilElement {}
+  var HTMLLabDatepickerElement: {
+    prototype: HTMLLabDatepickerElement;
+    new (): HTMLLabDatepickerElement;
+  };
+
   interface HTMLElementTagNameMap {
     'lab-alert': HTMLLabAlertElement
+    'lab-datepicker': HTMLLabDatepickerElement
   }
 
   interface ElementTagNameMap {
     'lab-alert': HTMLLabAlertElement;
+    'lab-datepicker': HTMLLabDatepickerElement;
   }
 
 
