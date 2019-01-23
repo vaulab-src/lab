@@ -17,7 +17,8 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "@stencil/sass": "^0.1.1"
+    "@stencil/sass": "^0.1.1",
+    "tiny-date-picker": "^3.2.8"
   },
   "devDependencies": {
     "@stencil/core": "~0.15.2",

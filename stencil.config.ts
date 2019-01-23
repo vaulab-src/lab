@@ -14,5 +14,6 @@ export const config: Config = {
   plugins: [sass()],
   bundles: [
     { components: ['lab-alert'] },
+    { components: ['lab-datepicker'] },
   ]
 };
